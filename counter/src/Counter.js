@@ -9,6 +9,7 @@ class Counter extends Component {
  }
 
  handleIncrement = () => {
+  console.log('in increment');
   this.setState({ count: this.state.count + 1 });
  };
  handleDecrement = () => {
@@ -16,6 +17,7 @@ class Counter extends Component {
  };
 
  render() {
+  console.log('in render');
   return (
    <div>
     Counter: {this.state.count}
